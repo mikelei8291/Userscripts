@@ -1,0 +1,45 @@
+#fanbox-dl-btn {
+    background-color: #eee;
+    color: #333;
+    border-radius: 18px;
+    border: none;
+    cursor: pointer;
+    float: right;
+    font-size: 14px;
+    font-weight: bold;
+    min-width: 112px;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 18px;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    transition: background-color 0.2s ease 0s;
+    user-select: none;
+}
+
+#fanbox-dl-btn:hover {
+    background-color: #e0e0e0;
+}
+
+#fanbox-dl-btn > .btn-progress, #fanbox-dl-btn > .btn-progress::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    height: 36px;
+}
+
+#fanbox-dl-btn > .btn-progress {
+    overflow: hidden;
+    white-space: nowrap;
+    transition: width .3s linear;
+}
+
+#fanbox-dl-btn > .btn-progress::before {
+    min-width: 112px;
+    padding: 0 18px;
+    background-color: #0096fa;
+    color: #fff;
+    content: attr(data-status);
+}

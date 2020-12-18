@@ -1,0 +1,23 @@
+## TODO
+- [x] 0.9.5
+  - [x] Config initialization
+  - [x] Multiple files sub-dir
+  - [x] Fix download progress
+  - [x] Fix document event listener
+- [x] 0.9.6
+  - [x] Fix download progress text color gradient
+  - [x] Document keyboard shortcuts
+- [ ] 0.9.7
+  - [ ] Configuration UI
+  - [ ] Evaluate polling performance and change `@match` rule
+  - [ ] Add update URL
+- [ ] 0.9.8
+  - [ ] Keyboard shortcuts list UI
+  - [ ] Keyboard shortcut to open the list
+- [ ] 0.9.9
+  - [ ] Batch downloading posts of the author
+- [ ] 1.0.0
+  - [ ] Rewrite `waitForKeyElements()` in pure JS
+  - [ ] Load `waitForKeyElements()` as sub-resource
+- [ ] Future
+  - [ ] i18n
