@@ -8,7 +8,9 @@
 2. Customizable templates for file names and save locations.
 3. Use keyboard shortcuts to navigate, like posts, download files (see note above) and [more](#keyboard-shortcuts).
 4. Add the missing link to the Pixiv page of the creator.
-5. Automatically redirect to the canonical URL of the page.
+5. Automatically copy text contents of posts after downloading.
+6. Click the title of the post to copy text contents of it manually.
+7. Automatically redirect to the canonical URL of the page.
 
 ## Filename formats
 
