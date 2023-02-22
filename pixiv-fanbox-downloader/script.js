@@ -58,6 +58,12 @@ const waitElement = (selector, callback, once = true, mount = document.body) => 
     }).observe(mount, { childList: true, subtree: true });
 }
 
+const createProfileLink = (href, className) => {
+    document.querySelector("div:last-child > div > div > h1 ~ div").appendChild(
+        createElement("a", { href, target: "_blank", rel: "noopener referrer" }, createElement("span", { className }))
+    );
+}
+
 if (location.pathname.startsWith("/@")) {
     location = document.querySelector("link[rel=canonical]").href;
 }
@@ -287,13 +293,7 @@ waitElement("a > div[style]", () => {
         if (!data.profileLinks.some(
             link => link.match(/^https:\/\/(?:www\.|)pixiv\.net\/(?:en\/|)(?:u(?:sers|)\/|member\.php\?id=)\d+$/)
         )) {
-            document.querySelector("div:last-child > div > div > h1 ~ div").appendChild(
-                createElement("a", {
-                    href: `https://www.pixiv.net/users/${data.user.userId}`,
-                    target: "_blank",
-                    rel: "noopener referrer"
-                }, createElement("span", { className: "pixiv-profile-icon" }))
-            );
+            createProfileLink(`https://www.pixiv.net/users/${data.user.userId}`, "pixiv-profile-icon");
         }
     });
 });
