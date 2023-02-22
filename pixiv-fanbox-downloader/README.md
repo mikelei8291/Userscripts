@@ -28,7 +28,7 @@ The final path of the file is the concatenation of all three templates in order 
 - `{postId}`: The ID of the post.
 - `{index}`: The index number of the file, starting from 1.
 - `{filename}`: The original filename of a downloadable file.
-- `{|{formatName}}`: Conditional token, resolves to the value before the vertical bar if the token `{formatName}` does not have a value, otherwise resolves to the value of `{formatName}`.
+- `{|{token}}`: Conditional token, resolves to the value before the vertical bar if the token `{token}` does not have a value, otherwise resolves to the value of `{token}`.
 
   _Example_: `{no name| ({filename})}` would resolve to "no name" if the token `{filename}` did not have a value, or " (example)" if the value of `{filename}` was "example".
 
