@@ -1,0 +1,62 @@
+#fanbox-dl-btn {
+    background-color: #eee;
+    border: none;
+    border-radius: 18px;
+    color: #333;
+    cursor: pointer;
+    float: right;
+    font-size: 14px;
+    font-weight: bold;
+    height: 36px;
+    line-height: 36px;
+    min-width: 112px;
+    overflow: hidden;
+    padding: 0 18px;
+    position: relative;
+    transition: background-color 0.2s ease 0s;
+    user-select: none;
+    white-space: nowrap;
+}
+
+#fanbox-dl-btn:hover {
+    background-color: #e0e0e0;
+}
+
+#fanbox-dl-btn > .btn-progress, #fanbox-dl-btn > .btn-progress::before {
+    box-sizing: border-box;
+    height: 36px;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+#fanbox-dl-btn > .btn-progress {
+    overflow: hidden;
+    transition: width .3s linear;
+    white-space: nowrap;
+}
+
+#fanbox-dl-btn > .btn-progress::before {
+    background-color: #0096fa;
+    color: #fff;
+    content: attr(data-status);
+    min-width: 112px;
+    padding: 0 18px;
+}
+
+.pixiv-profile-icon {
+    align-items: center;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    margin-left: 8px;
+    width: 30px;
+}
+
+.pixiv-profile-icon::after {
+    background: url("https://s.pximg.net/www/js/fanbox/0382bed4f59b286bb1a87a5a26b349f5.svg") center center / contain no-repeat;
+    content: "";
+    display: block;
+    height: 70%;
+    width: 70%;
+}
